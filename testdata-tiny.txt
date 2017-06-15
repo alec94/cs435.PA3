@@ -1,0 +1,69 @@
+REVISION 295 85606 User:AnonymousCoward 2002-02-25T15:43:11Z ip:Conversion_script ip:Conversion_script
+CATEGORY
+IMAGE
+MAIN Identity_theft Nupedia Slashdot Wikipedia
+TALK AnonymousCoward
+USER
+USER_TALK
+OTHER
+EXTERNAL http://www.wikipedia.com/wiki.cgi?action=history&id=AnonymousCoward
+TEMPLATE
+COMMENT Automated conversion
+MINOR 1
+TEXTDATA 96
+
+REVISION 295 85607 User:AnonymousCoward 2002-06-04T19:04:09Z Koyaanis_Qatsi 90
+CATEGORY
+IMAGE
+MAIN Identity_theft Nupedia Slashdot Wikipedia
+TALK
+USER
+USER_TALK
+OTHER
+EXTERNAL http://www.wikipedia.com/wiki.cgi?action=history&id=AnonymousCoward
+TEMPLATE
+COMMENT is this real?
+MINOR 0
+TEXTDATA 97
+
+REVISION 295 191871 User:AnonymousCoward 2002-06-04T19:06:08Z Koyaanis_Qatsi 90
+CATEGORY
+IMAGE
+MAIN Identity_theft Nupedia Slashdot Wikipedia
+TALK
+USER
+USER_TALK
+OTHER
+EXTERNAL http://www.wikipedia.com/wiki.cgi?action=history&id=AnonymousCoward
+TEMPLATE
+COMMENT removing obsolete info
+MINOR 0
+TEXTDATA 86
+
+REVISION 295 233503 User:AnonymousCoward 2001-07-24T17:26:04Z Stephen_Gilbert 86
+CATEGORY
+IMAGE
+MAIN Nupedia Slashdot
+TALK
+USER
+USER_TALK
+OTHER
+EXTERNAL
+TEMPLATE
+COMMENT *
+MINOR 1
+TEXTDATA 23
+
+REVISION 295 233504 User:AnonymousCoward 2001-08-17T23:10:30Z Tbc 10
+CATEGORY
+IMAGE
+MAIN Identity_theft Nupedia Slashdot Wikipedia
+TALK
+USER
+USER_TALK
+OTHER
+EXTERNAL http://www.wikipedia.com/wiki.cgi?action=history&id=AnonymousCoward
+TEMPLATE
+COMMENT anonymous cowards are not entirely anonymous at Wikipedia
+MINOR 0
+TEXTDATA 94

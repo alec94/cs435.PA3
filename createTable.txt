@@ -1,0 +1,34 @@
+create table in hbase:
+hbase> create 'wikiData', 'cf1', 'cf2'
+
+create table in hive:
+hive>
+CREATE EXTERNAL TABLE wikiData(
+  RevID INT
+, ArticleID STRING 
+, ArticleTitle STRING
+, `TimeStamp` STRING
+, Username STRING
+, UserID STRING
+, Category STRING 
+, Image STRING 
+, Main STRING 
+, Talk STRING 
+, `User` STRING 
+, User_Talk STRING 
+, Other STRING 
+, `External` STRING 
+, Template STRING 
+, `Comment` STRING 
+, Minor INT
+, Textdata INT
+)
+STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+WITH SERDEPROPERTIES ('hbase.columns.mapping' = ':key,cf1:articleID,cf1:articletitle,cf1:timestamp,cf1:username,cf1:userid,cf2:category,cf2:image,cf2:main,cf2:talk,cf2:user,cf2:user_talk,cf2:other,cf2:external,cf2:template,cf2:comment,cf2:minor,cf2:textdata')
+TBLPROPERTIES ('hbase.table.name' = 'wikiData')
+;
+
+Import data to hbase:
+hbase org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.separator=,  -Dimporttsv.columns="HBASE_ROW_KEY,cf1:articleID,cf1:articletitle,cf1:timestamp,cf1:username,cf1:userid,cf2:category,cf2:image,cf2:main,cf2:talk,cf2:user,cf2:user_talk,cf2:other,cf2:external,cf2:template,cf2:comment,cf2:minor,cf2:textdata" wikiData hdfs://denver:30321/PA3/output/part-r-00000
+
+

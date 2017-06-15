@@ -1,0 +1,96 @@
+Task 1:
+SELECT articletitle, 
+COUNT(articletitle) AS total 
+FROM wikidata 
+GROUP BY articletitle 
+ORDER BY total DESC 
+LIMIT 10
+;
+
+Liberlogos      														1520
+Tedius_Zanarukando      												1340
+MusiCitizen     														1262
+YUL89YYZ        														1225
+MisfitToys/List_of_celebrities_with_links_to_the_U.S._Republican_Party  1206
+KF/For_future_reference 												1183
+Vaoverland      														1169
+Charles_Matthews/New_-_other    										1090
+Reddi   																1070
+Blankfaze       														1064
+
+Task 2:
+SELECT Username, 
+COUNT(username) AS total 
+FROM wikidata 
+GROUP BY username 
+ORDER BY total DESC 
+LIMIT 10
+;
+
+Charles_Matthews    3381
+Paul_August     	3314
+Blankfaze       	2102
+Antandrus       	1845
+KF      			1791
+MetsBot 			1754
+Chris_73        	1633
+Liberlogos      	1576
+Davidcannon     	1530
+Angela  			1341
+
+Task 3:
+SELECT COUNT(articleid) FROM wikidata;
+435868
+
+SELECT 
+COUNT(articleid)
+FROM (
+SELECT articleid
+FROM wikidata
+GROUP BY articleid
+HAVING COUNT(articleid) = 1
+) AS total
+;
+5288
+
+(5288/435868) * 100 = 1.213%
+
+Task 4:
+SELECT COUNT(articleid) FROM wikidata;
+435868
+
+SELECT 
+COUNT(articleid)
+FROM (
+SELECT articleid
+FROM wikidata
+GROUP BY articleid
+HAVING COUNT(articleid) > 30
+) AS total
+;
+2891
+
+(2891/435868) = .66327%
+
+Task 5:
+SELECT articletitle, 
+COUNT(articletitle) AS total 
+FROM wikidata
+WHERE SUBSTRING(`timestamp`,0,4) = '2008'
+GROUP BY articletitle 
+ORDER BY total DESC 
+LIMIT 10
+;
+
+PHG     				46
+Theresa_knott   		14
+Twilek  				12
+Fir0002 				11
+Kesac   				10
+Jeandré_du_Toit			9
+KF/For_future_reference 9
+Tedius_Zanarukando      8
+Antandrus/To_do_list    8
+Reddi   				8
+
+
